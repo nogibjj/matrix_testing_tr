@@ -1,19 +1,9 @@
-"""
-Main cli or app entry point
-"""
+# import pandas as pd
+import matplotlib.pyplot as plt
 
-from mylib.calculator import add
-import click
+def desc_df(df):
+    return df.describe()
 
-#var=1;var=2
-
-@click.command("add")
-@click.argument("a", type=int)
-@click.argument("b", type=int)
-def add_cli(a, b):
-    click.echo(add(a, b))
-
-
-if __name__ == "__main__":
-    # pylint: disable=no-value-for-parameter
-    add_cli()
+def bar_plot(df):
+    df.plot(kind="bar")
+    plt.show()
