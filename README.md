@@ -1,37 +1,50 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+# Mini-Project 4  Tianji Rao
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
+[![CI](https://github.com/nogibjj/matrix_testing_tr/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/matrix_testing_tr/actions/workflows/ci.yml)
+
+## Overview
+This repo contains:
+
+- .devcontainer 
+- .github   
+- .gitignore    
+- Makefile  
+- README.md 
+- requirements.txt  
+- main.py   
+- test_main.py  
+- some .sh files    
 
 
+## Objective
+The objective of this project is creat a action matrix for multiple python versions and os systems. Here we modified the `ci.yml` file and created two matrixs corresponding to python version and os. 
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+## Matrix
+1. Python versions:    
+`3.7`, `3.8`, `3.9`, `3.10`, `3.11`
 
-Things included are:
+2. OS:  
+Latest `Windows` and latest `ubuntu`
 
-* `Makefile`
+## Test
+Here we create a function `add_func` based on the `add` in mylib/calculator. In the test_main.py file, we use `test_add_func` which contains three examples for testing.
 
-* `Pytest`
+## Preparation
+1. Open a new codespace 
+2. Waiting for the codespace to be built with required packages installed   
+3. Apply make actions
 
-* `pandas`
 
-* `Ruff`:  
+## Actions
+1. Format: `make format`    
 
-Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff here](https://github.com/astral-sh/ruff).
+2. Lint: `make lint`    
+![Screenshot 2023-09-22 at 9 52 58 PM](https://github.com/nogibjj/TianjiRao_Mini_Project_3/assets/104114843/957b6156-1a10-46e0-aa8b-e29a975c1334)
 
-* `Dockerfile`
+    Here we use ruff to lint all codes in .py files and mylib/.py files.
 
-* `GitHub copilot`
 
-* `jupyter` and `ipython` 
-
-* A base set of libraries for devops and web
-
-* `githubactions`
-
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
-
+3. Test: `make test`    
+![Screenshot 2023-09-22 at 9 53 35 PM](https://github.com/nogibjj/TianjiRao_Mini_Project_3/assets/104114843/e5a84fe7-65e1-40a8-9647-cdac356dea2e)
 
 
