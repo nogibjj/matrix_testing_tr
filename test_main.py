@@ -1,7 +1,7 @@
-from main import add
+from main import add_func
 
 
 def test_add():
-    assert add(10, 2) == 12
-    assert add(1, 2) == 3
-    assert add(5, 4) === 9
+    assert add_func(1) == 4
+    assert add_func(2) == 5
+    assert add_func(3) == 6
